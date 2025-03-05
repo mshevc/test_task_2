@@ -17,7 +17,12 @@ INSTALLATION
 ------------
 
 ### Install with Docker
-     
+
+Clone project
+
+    git clone https://github.com/mshevc/test_task_2.git
+    cd <project directory>
+
 Start the container in directory with project
 
     docker-compose up --build -d
