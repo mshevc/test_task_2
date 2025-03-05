@@ -2,6 +2,11 @@
 
 namespace app\restApi;
 
+/**
+ * Interface RestInterface
+ *
+ * @author Marina Shevchenko
+ */
 interface ResponseInterface
 {
     /**

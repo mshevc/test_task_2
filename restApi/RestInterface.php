@@ -3,7 +3,7 @@
 namespace app\restApi;
 
 /**
- * Inerface RestInterface
+ * Interface RestInterface
  *
  * @author Marina Shevchenko
  */
