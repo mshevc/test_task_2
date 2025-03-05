@@ -1,0 +1,20 @@
+services:
+  app:
+    build: .
+    container_name: yii2-api-app
+    volumes:
+      - .:/var/app
+      - /var/app/vendor
+    expose:
+      - "9000"
+
+  web:
+    image: nginx:latest
+    container_name: yii2-api-web
+    volumes:
+      - .:/var/app
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "8000:80"
+    depends_on:
+      - app
